@@ -1,0 +1,259 @@
+#messageContainer{
+	display:none;
+}
+
+#outer-dropzone {
+  height: 140px;
+
+  touch-action: none;
+}
+
+#inner-dropzone {
+  height: 80px;
+}
+
+.dropzone {
+  background-color: #ccc;
+  border: dashed 4px transparent;
+  border-radius: 4px;
+  margin: 10px auto 30px;
+  padding: 10px;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.drop-active {
+  border-color: #aaa;
+}
+
+.drop-target {
+  background-color: #29e;
+  border-color: #fff;
+  border-style: solid;
+}
+
+.drag-drop {
+  display: inline-block;
+  position:absolute;
+  z-index:999;
+  min-width: 40px;
+  padding: 0em 0.5em;
+  padding-left:0;
+  color: #fff;
+  background-color: #29e;
+  border: none;
+
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+
+  transition: background-color 0.3s;
+  line-height: 10px;
+  padding-right: 0 !important;
+  padding-left: 5px !important;
+}
+
+.drag-drop.can-drop {
+  color: #000;
+  background-color: transparent;
+  opacity:0.9;
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+
+  /* IE 5-7 */
+  filter: alpha(opacity=90);
+
+  /* Netscape */
+  -moz-opacity: 0.9;
+
+  /* Safari 1.x */
+  -khtml-opacity: 0.9;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.circle {
+	width: 10px;
+    height: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #323c3c;
+	display: inline-block;
+    margin-top: 1px;
+    margin-right: 2px;
+}
+
+.dropped-out{
+	display: block;
+    padding: .75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    width:200px;
+    color: black;
+}
+
+.col-fixed-240{
+    width:240px;
+    height:100%;
+    z-index:1;
+}
+
+.col-fixed-605{
+    margin-left:240px;
+    width:605px;
+    height:100%;
+    z-index:1;
+}
+
+.page-item{
+	cursor:pointer;
+}
+
+.pager li {
+    display: inline;
+}
+
+::ng-deep .pager {
+    padding-left: 0;
+    margin: 20px 0;
+    text-align: center;
+    list-style: none;
+    width: 200px;
+}
+
+.pager li>a, .pager li>span
+{
+    display: inline-block;
+    padding: 5px 14px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+
+.drag-drop.dropped-out .descrizione {
+    font-size: 9px !important;
+}
+
+#the-canvas{
+  height:100%;
+  width: 595px;
+}
+
+::ng-deep .fw,
+.fwp,
+.fwh,
+.fwpc,
+.fwvh,
+.fwpl,
+.fwpx,
+.fwpy,
+section,
+footer,
+header {
+    width: 100%;
+    float: left;
+    display: block;
+}
+
+::ng-deep .box_shadow {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 100%;
+}
+
+::ng-deep .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+::ng-deep .d_flex {
+    display: flex;
+    align-items: center;
+}
+
+::ng-deep .f_justify_start {
+    justify-content: start !important;
+}
+
+::ng-deep .f_align-center {
+    align-items: center;
+}
+
+::ng-deep .f_align-start {
+    -ms-flex-align: start !important;
+    align-items: flex-start !important;
+}
+
+::ng-deep #portfolio_details {
+    margin-top: -130px;
+}
+
+::ng-deep #portfolio_title h1 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0px 0px 30px 0px;
+}
+
+
+::ng-deep .pagination {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+::ng-deep .pagination a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2px 0 3px !important;
+    box-shadow: 0 0 6px 0 rgba(18, 64, 148, 0.06);
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+::ng-deep .pagination > .active > a,
+::ng-deep .pagination > .active > a:focus,
+::ng-deep .pagination > .active > a:hover,
+::ng-deep .pagination > .active > span,
+::ng-deep .pagination > .active > span:focus,
+::ng-deep .pagination > .active > span:hover,
+::ng-deep .pagination a.page-link:hover,
+::ng-deep .pagination a.page-link span:focus,
+::ng-deep .pagination a.page-link:hover span {
+    background: #00aeef;
+    color: #fff;
+}
+
+::ng-deep .pagination > li > a,
+::ng-deep .pagination > li > span {
+    border: 0;
+}
+
+::ng-deep .pagination > li:first-child > a,
+::ng-deep .pagination > li:first-child > span,
+::ng-deep .pagination > li:last-child > a,
+::ng-deep .pagination > li:last-child > span {
+    background: none;
+    border: 0;
+    box-shadow: none;
+    border-radius: 15px;
+}
+
+

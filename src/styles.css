@@ -1,1 +1,244 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import url("./assets/css/style.css");
+@import url("./assets/css/selectbox.css");
+@import url("./assets/css/select2.min.css");
+@import url("./assets/css/style-updated.css");
+@import url("./assets/css/ezmark.css");
+@import url("./assets/css/style-satish.css");
+@import url("./assets/css/updated.css");
+@import url("./assets/css/custom.css");
+
+.dropdown-item {
+    white-space: normal;
+}
+
+.filterStatusBlock input[type="radio"] {
+    width: auto;
+}
+
+.radio_btns {
+    display: inline-flex;
+}
+
+.radio_btns label {
+    display: flex;
+    flex-grow: 1;
+    margin: 6px 25px 0px 0px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #111927;
+    cursor: pointer;
+    padding-left: 23px;
+}
+
+.radio_btns label input {
+    margin-right: 8px;
+}
+
+.graph {
+    margin-top: 0px;
+}
+
+.hidden_data {
+    z-index: 100000;
+}
+
+#reject_popup {
+    z-index: 100001;
+}
+
+.alerts {
+    z-index: 100001;
+}
+
+#cutoff_popup {
+    z-index: 100001;
+}
+
+/* multiselection dropdown arrow image */
+
+
+.select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow:before {
+    display: inline-block;
+    content: "";
+    box-sizing: border-box;
+    height: 8px !important;
+    width: 8px !important;
+    border-style: solid;
+    border-width: 0px 2px 2px 0px !important;
+    border-color: #6c7380 !important;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 45%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.select2.select2-container.select2-container--open
+    .select2-selection.select2-selection--single {
+    border: 1px solid #00aeef !important;
+}
+
+.ngb-dp-arrow button {
+    padding: 0 6px;
+}
+
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    /* font-family: Roboto, "Helvetica Neue", sans-serif; */
+}
+
+.wip {
+    color: #5090ff !important;
+}
+
+.child_scroller {
+    overflow-x: scroll !important;
+}
+
+.child_row .select2-selection__arrow b {
+    display: none !important;
+}
+
+.childLevelTable {
+    height: auto !important;
+}
+
+.scroller-height {
+    height: calc(100vh - 224px);
+}
+
+/* .select2-container {
+    z-index: 999999 !important;
+} */
+
+.select2-dot-status {
+    width: 7px;
+    height: 7px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.reconciliation_header {
+    min-width: 600px;
+    align-items: center;
+}
+.reconciliation_header h1 {
+    display: inline-block;
+}
+.reconciliation_header .btn_auto {
+    margin-left: 20px;
+    position: relative;
+    top: -3px;
+    background: #00aeef;
+    padding-left: 20px;
+}
+
+.reconciliation_selectbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 20px 20px;
+}
+.reconciliation_selectbox .filterStatusBlock label {
+    padding-bottom: 0px;
+    min-width: 95px;
+}
+.reconciliation_selectbox .filterStatusBlock {
+    display: flex;
+    min-width: 335px;
+    align-items: center;
+}
+.reconciliation_selectbox .filterStatusBlock select {
+    width: 240px;
+    height: 34px;
+    border: 1px solid #c1c1c1;
+    margin-left: 10px;
+}
+.reconciliation_selectbox strong {
+    padding-left: 3px;
+}
+.reconciliation_selectbox
+    .select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow
+    b {
+    top: 50%;
+}
+.reconciliation_selectbox span {
+    font-size: 13px;
+    font-weight: 300;
+    color: #6c7380;
+}
+.reconciliation_selectbox strong {
+    font-weight: 500;
+    color: #111927 !important;
+}
+#reconciliation_table {
+    width: 100%;
+}
+#reconciliation_table th {
+    font-size: 12px;
+}
+#reconciliation_table thead th:first-child,
+#reconciliation_table tbody td:first-child {
+    padding-left: 10px !important;
+}
+.no_result_found {
+    font-size: 14px !important ;
+    font-weight: normal;
+    color: #898989 !important;
+    text-align: center !important;
+    margin-top: 30px;
+}
+.heading_reconciliation {
+    font-size: 14px;
+    font-weight: 500;
+    color: #111927;
+    margin-top: 30px;
+    margin-bottom: 18px;
+}
+.reconciliation_footer {
+    height: 74px;
+}
+.reconciliation_footer .filterBtns {
+    right: 0px;
+    justify-content: end;
+}
+.reconciliation_top {
+    display: flex;
+    justify-content: space-between;
+}
+.reconciliation_top.has_border {
+    border-bottom: 2px solid #e6e6e6;
+}
+.reconciliation_btns .tabs {
+    width: 278px;
+    margin-top: 32px;
+}
+.reconciliation_btns .tabs li.bg_tabs {
+    min-width: 136px;
+}
+.reconciliation_btns .tabs li a {
+    min-width: 136px;
+}
+.row_reverse_onchange.active {
+    flex-direction: row-reverse;
+}
+.row_reverse_onchange.active .pr20 {
+    padding-left: 20px !important;
+    padding-right: 12px !important;
+}
+.row_reverse_onchange.active .pl20 {
+    padding-right: 20px !important;
+    padding-left: 12px !important;
+}

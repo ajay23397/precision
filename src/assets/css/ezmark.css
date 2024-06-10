@@ -1,0 +1,86 @@
+/**
+ * CSS File for ezMark jQuery Plugin
+ *
+ **/
+.ez-hide { opacity: 0; filter:alpha(opacity=0); }
+.ez-checkbox {
+	background: transparent;
+	display:inline-block;
+	border: 1px solid #bbbbbb;
+	width: 16px;
+	height: 16px;
+	border-radius: 2px;
+	position: relative;
+	transition-duration: 0.3s;
+	overflow: hidden;
+	cursor: pointer;
+}
+.ez-checkbox:after {
+	content: "";
+    /*opacity: 0;*/
+    width: 10px;
+    height: 6px;
+    transform-origin: left top;
+    border-right: 2px solid #00aeef;
+    border-top: 2px solid #00aeef;
+    content: '';
+    left: 13px;
+    top: 4px;
+    position: absolute;
+	transform: rotate(135deg);
+	transition-duration: 0.3s;
+}
+.ez-checkbox:before {
+	width: 14px;
+	height: 14px;
+	content: " ";
+    opacity: 1;
+    background: #fff;
+    z-index: 99;
+	transition-duration: 0.3s;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+
+
+.ez-radio {
+	background: transparent;
+	display:inline-block;
+	border: 1px solid #CED4DA;
+	width: 16px;
+	height: 16px;
+	border-radius: 2px;
+	position: relative;
+	transition-duration: 0.3s;
+	overflow: hidden;
+	cursor: pointer;
+	border-radius: 50%;
+}
+.ez-radio:after {
+	content: "";
+    opacity: 0;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    background: #00aeef;
+    border-radius: 50%;
+}
+
+.ez-checkbox.ez-checked:after { opacity: 1; }
+.ez-checkbox.ez-checked:before { left: 20px; }
+.ez-checkbox.ez-checked { border-color: #00aeef; }
+.ez-selected { border: 1px solid #00aeef; }
+
+.ez-selected:after { opacity: 1; }
+
+.ez-checkbox-green {
+	background: transparent;
+	display:inline-block;
+	*display: inline;
+}
+.ez-checked-green { background-position: 0 -18px; }
+.ez-checkbox, .ez-radio { zoom: 1; *display:inline; _height:30px; }

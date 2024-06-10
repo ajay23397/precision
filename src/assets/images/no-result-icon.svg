@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29.946" height="28.086" viewBox="0 0 29.946 28.086">
+    <g data-name="Group 3582">
+        <g data-name="Group 3581">
+            <path data-name="Union 72" d="M23.713 24.959 17.744 19A10.786 10.786 0 1 1 19 17.744l5.972 5.963a.884.884 0 0 1 0 1.253.871.871 0 0 1-.628.271.9.9 0 0 1-.631-.272zM1.779 10.774a8.995 8.995 0 1 0 8.995-8.995 9.007 9.007 0 0 0-8.995 8.995z" transform="translate(4.069 2.856)" style="fill:#6c7380"/>
+        </g>
+        <g data-name="Rectangle 1017" transform="rotate(48 13.689 30.746)" style="stroke:#fff;fill:#6c7380">
+            <rect width="3.838" height="36.841" rx="1.919" style="stroke:none"/>
+            <rect x=".5" y=".5" width="2.838" height="35.841" rx="1.419" style="fill:none"/>
+        </g>
+    </g>
+</svg>

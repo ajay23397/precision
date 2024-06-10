@@ -1,0 +1,58 @@
+.dropdown-toggle.hidetoggle ::after {
+    display: none !important;
+}
+
+.overflowScrollX {
+    overflow-x: scroll !important;
+}
+
+/* 
+
+.ngb-dp-day.ng-star-inserted.disabled{
+    background-color: #ebebeb;
+} */
+
+.multiselect-item-checkbox.ng-star-inserted {
+    width: 100% !important;
+}
+
+.filter-textbox {
+    width: 100% !important;
+}
+
+.bankbalancePopup {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    padding: 13px 0;
+    width: 305px;
+    box-shadow: 0 3px 40px 0 rgba(18, 64, 148, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.bankbalancePopup h4 {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 16px;
+}
+
+.status {
+    text-transform: uppercase;
+}
+
+.textLeft {
+    text-align: left !important;
+    padding-left: 15px !important;
+}
+
+.textRight {
+    text-align: right !important;
+    padding-left: 15px !important;
+}
+
+.nowrap{
+    white-space: nowrap;
+}
