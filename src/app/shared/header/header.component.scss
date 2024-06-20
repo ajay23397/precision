@@ -53,7 +53,7 @@
 }
 .hNot .dropdown-menu a.hproLog {
     font-weight: normal;
-    color: #003b7c;
+    color: #063261;
 }
 
 .hNot .dropdown-menu .close {
@@ -197,10 +197,13 @@
     padding: 0.25rem 1.5rem;
     clear: both;
     font-weight: 400;
-    color: #212529;
+    color: #476e96;
     text-align: inherit;
-    background-color: transparent;
+  
     border: 0;
+}
+.dropdown-item:hover{
+    background-color: lightblue;
 }
 
 .submenu a:link {

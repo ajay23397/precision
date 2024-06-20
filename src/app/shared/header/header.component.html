@@ -160,7 +160,7 @@
                                     <li ngbDropdownItem>
                                         <div>
                                             <a routerLink="/viewnotifications/"
-                                                [queryParams]="{NotificationType:'Notification'}">
+                                               >
                                                 <h5>{{ "dd-mm-yy"}}</h5>
                                                 <p>{{ "sdsdsd" }}</p>
                                             </a>
@@ -176,7 +176,7 @@
                                     <li class="notiViewall" ngbDropdownItem>
                                         <div>
                                             <a routerLink="/viewnotifications/"
-                                                [queryParams]="{NotificationType:'Notification'}">View
+                                               >View
                                                 All</a>
                                         </div>
                                         <div>
@@ -232,7 +232,42 @@
                 <ul ngbNav id="menu" style="z-index: 999 !important; " class="ms-auto">
                     <li class="nav-item dropdown" style="z-index: 99999999 !important;" ngbNavItem class="linksMenu"
                         style="z-index: 99999999 !important;">
-                        <a ngbNavLink routerLink="{{ 'sd' }}" routerLinkActive="active">SETTINGS</a>
+                        <a ngbNavLink  routerLinkActive="active">SETTINGS</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" >Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+
+
+                    </li>
+                    <li class="nav-item dropdown" style="z-index: 99999999 !important;" ngbNavItem class="linksMenu"
+                        style="z-index: 99999999 !important;">
+                        <a ngbNavLink  routerLinkActive="active">MASTERS</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" routerLink="group-master">Group Master</a></li>
+                    <li><a class="dropdown-item" routerLink="distribution-list-master">Distribution List Master</a></li>
+                    <li><a class="dropdown-item" routerLink="report-master">Report Master</a></li>
+                    <li><a class="dropdown-item" routerLink="family-client-details">Family Client Details</a></li>
+                    <li><a class="dropdown-item" routerLink="trade-level-identifier">Trade Level Identifier</a></li>
+                    <li><a class="dropdown-item" routerLink="reference-master">Reference Master</a></li>
+                    <li><a class="dropdown-item" routerLink="dynamic-column-master">Dynamic Column Master</a></li>
+                    <li><a class="dropdown-item" routerLink="client-input-master">Client Input Master</a></li>
+                    <li><a class="dropdown-item" routerLink="generic-report-master">Generic Report Master</a></li>
+                    <li><a class="dropdown-item" routerLink="check-criteria-master">Check Criteria Master</a></li>
+                    <li><a class="dropdown-item" routerLink="alert-master">Alert Master</a></li>
+                    <li><a class="dropdown-item" routerLink="exclude-clients-in-upload">Exclude Clients in Upload</a></li>
+                    <li><a class="dropdown-item" routerLink="hft-billing">HFT Billing</a></li>
+                        </ul>
+                    </li>
+
+
+
+
+                    <li class="nav-item dropdown" style="z-index: 99999999 !important;" ngbNavItem class="linksMenu"
+                        style="z-index: 99999999 !important;">
+                        <a ngbNavLink  routerLinkActive="active">REPORTS</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -244,30 +279,7 @@
                     </li>
                     <li class="nav-item dropdown" style="z-index: 99999999 !important;" ngbNavItem class="linksMenu"
                         style="z-index: 99999999 !important;">
-                        <a ngbNavLink routerLink="{{ 'sd' }}" routerLinkActive="active">MASTERS</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" routerLink="#">Group Master</a></li>
-                            <li><a class="dropdown-item" routerLink="#">Distribution List Master</a></li>
-                            <li><a class="dropdown-item" routerLink="#">Report Master</a></li>
-                            <li><a class="dropdown-item" routerLink="#">Family Client Details</a></li>
-                            <li><a class="dropdown-item" routerLink="#">Trade Level identifier</a></li>
-                            <li><a class="dropdown-item" routerLink="#">Referance Master</a></li>
-                            <li><a class="dropdown-item" routerLink="#">Dynamic column Master</a></li>
-                            <li><a class="dropdown-item" routerLink="#">Client input Master</a></li>
-                            <li><a class="dropdown-item" routerLink="#">Gemeric Report Master</a></li>
-                            <li><a class="dropdown-item" routerLink="#">Check Criteria Master</a></li>
-                            <li><a class="dropdown-item" routerLink="#">Alert Master</a></li>
-                            <li><a class="dropdown-item" routerLink="#">Exclude Clients in Upload</a></li>
-                            <li><a class="dropdown-item" routerLink="#">HFT Billing</a></li>
-                        </ul>
-                    </li>
-
-
-
-
-                    <li class="nav-item dropdown" style="z-index: 99999999 !important;" ngbNavItem class="linksMenu"
-                        style="z-index: 99999999 !important;">
-                        <a ngbNavLink routerLink="{{ 'sd' }}" routerLinkActive="active">REPORTS</a>
+                        <a ngbNavLink  routerLinkActive="active">UPLOADS</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -279,7 +291,7 @@
                     </li>
                     <li class="nav-item dropdown" style="z-index: 99999999 !important;" ngbNavItem class="linksMenu"
                         style="z-index: 99999999 !important;">
-                        <a ngbNavLink routerLink="{{ 'sd' }}" routerLinkActive="active">UPLOADS</a>
+                        <a ngbNavLink  routerLinkActive="active">OTHER</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -291,7 +303,7 @@
                     </li>
                     <li class="nav-item dropdown" style="z-index: 99999999 !important;" ngbNavItem class="linksMenu"
                         style="z-index: 99999999 !important;">
-                        <a ngbNavLink routerLink="{{ 'sd' }}" routerLinkActive="active">OTHER</a>
+                        <a ngbNavLink  routerLinkActive="active">ACTIVITY TRACKING</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -303,7 +315,7 @@
                     </li>
                     <li class="nav-item dropdown" style="z-index: 99999999 !important;" ngbNavItem class="linksMenu"
                         style="z-index: 99999999 !important;">
-                        <a ngbNavLink routerLink="{{ 'sd' }}" routerLinkActive="active">ACTIVITY TRACKING</a>
+                        <a ngbNavLink  routerLinkActive="active">FRONT OFFICE</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -315,7 +327,7 @@
                     </li>
                     <li class="nav-item dropdown" style="z-index: 99999999 !important;" ngbNavItem class="linksMenu"
                         style="z-index: 99999999 !important;">
-                        <a ngbNavLink routerLink="{{ 'sd' }}" routerLinkActive="active">FRONT OFFICE</a>
+                        <a ngbNavLink routerLinkActive="active">FNO BILLING</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -327,7 +339,7 @@
                     </li>
                     <li class="nav-item dropdown" style="z-index: 99999999 !important;" ngbNavItem class="linksMenu"
                         style="z-index: 99999999 !important;">
-                        <a ngbNavLink routerLink="{{ 'sd' }}" routerLinkActive="active">FNO BILLING</a>
+                        <a ngbNavLink  routerLinkActive="active">CASH/FO LEDGER RECON</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -339,19 +351,7 @@
                     </li>
                     <li class="nav-item dropdown" style="z-index: 99999999 !important;" ngbNavItem class="linksMenu"
                         style="z-index: 99999999 !important;">
-                        <a ngbNavLink routerLink="{{ 'sd' }}" routerLinkActive="active">CASH/FO LEDGER RECON</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-
-
-                    </li>
-                    <li class="nav-item dropdown" style="z-index: 99999999 !important;" ngbNavItem class="linksMenu"
-                        style="z-index: 99999999 !important;">
-                        <a ngbNavLink routerLink="{{ 'sd' }}" routerLinkActive="active">RECON</a>
+                        <a ngbNavLink  routerLinkActive="active">RECON</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -368,5 +368,9 @@
 
 
     </div>
+    
 
 </header>
+
+        <router-outlet></router-outlet>
+ 

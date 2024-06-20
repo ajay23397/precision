@@ -1,0 +1,189 @@
+<section class="group-master">
+    <div class="container">
+        <div class="row mt-2">
+            <div class="btn-flex-box">
+                <div class="button">
+                    <button type="button" class="btn btn-primary px-4 my-0 ">Add Group</button>
+                </div>
+                <div class="button">
+                    <button type="button" class="btn btn-primary px-4 my-0">Modify Group</button>
+                </div>
+            </div>
+            <!-- form 1 -->
+            <form class="groupmaster-flex-box">
+
+                <div class="col-md-6 mainColumn">
+                    <div class="field-row mt-3">
+                        <div class="groupmaster-flex-box">
+                            <div>
+                                <label for="segment-select" class="select-label">Segment :</label>
+                            </div>
+                            <div class="select-input">
+                                <select name="segment" id="segment-select" [(ngModel)]="selectedOption">
+                                    <option value="">--select--</option>
+                                    <option value="CASH">CASH</option>
+                                    <option value="FO">FO</option>
+                                    <option value="CDS">CDS</option>
+                                    <option value="OTHERS">OTHERS</option>
+                                    <option value="OTHERS_CDS">OTHERS_CDS</option>
+                                    <option value="SLB">SLB</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+
+                    <div class="field-row mt-3">
+                        <div class="groupmaster-flex-box">
+                            <div>
+                                <label for="front_office-select" class="select-label"> Front Office :</label>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                    <div class="field-row mt-3">
+                        <div class="groupmaster-flex-box">
+                            <div>
+                                <label for="group-code" class="select-label">Group Code :</label>
+                            </div>
+                            <div>
+                                <input type="text" name="" [value]="selectedOption" class="master-input">
+                            </div>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                    <div class="field-row mt-3">
+                        <div class="groupmaster-flex-box">
+                            <div>
+                                <label for="groupName" class="select-label">Group Name :</label>
+                            </div>
+                            <div>
+                                <input type="text" name="" value="" class="master-input">
+                            </div>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                    <div class="field-row mt-3">
+                        <div class="groupmaster-flex-box">
+                            <div>
+                                <label for="requirments" class="select-label">Requirments :</label>
+                            </div>
+                            <div>
+                                <input type="text" name="" value="" class="master-input">
+                            </div>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                    <div class="field-row mt-3 ">
+                        <div class="groupmaster-flex-box">
+                            <div>
+                                <label for="segment-select" class="select-label">Template :</label>
+                            </div>
+
+                            <div class="select-input mx-0">
+                                <select name="segment" id="segment-select">
+                                    <option value="">--select--</option>
+                                    <option value="CASH">CASH</option>
+                                    <option value="FO">FO</option>
+                                    <option value="CDS">CDS</option>
+                                    <option value="OTHERS">OTHERS</option>
+                                    <option value="OTHERS_CDS">OTHERS_CDS</option>
+                                    <option value="SLB">SLB</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="button">
+                            <button type="button" class="btn btn-primary  px-3 py-1 mx-0">Export</button>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="checkbox-container">
+                        <div class="checkbox-group">
+                            <label for="checkbox1" class="select-label">Summary XI</label>
+                            <input type="checkbox" id="checkbox1">
+                        </div>
+                        <div class="checkbox-group">
+                            <label for="checkbox2" class="select-label">Summary PDF</label>
+                            <input type="checkbox" id="checkbox2">
+                        </div>
+                    </div>
+                    <div class="checkbox-container">
+                        <div class="checkbox-group">
+                            <label for="checkbox3" class="select-label">Detail XL</label>
+                            <input type="checkbox" id="checkbox3">
+                        </div>
+                        <div class="checkbox-group">
+                            <label for="checkbox4" class="select-label">Detail PDF</label>
+                            <input type="checkbox" id="checkbox4">
+                        </div>
+                    </div>
+                    <div class="checkbox-container">
+                        <div class="checkbox-group">
+                            <label for="checkbox5" class="select-label">Trade Name</label>
+                            <input type="checkbox" id="checkbox5">
+                        </div>
+                        <div class="checkbox-group">
+                            <label for="checkbox6" class="select-label">Internal Code</label>
+                            <input type="checkbox" id="checkbox6">
+                        </div>
+                    </div>
+                    <div class="checkbox-container">
+                        <div class="checkbox-group">
+                            <label for="checkbox7" class="select-label">Inclusive Amount</label>
+                            <input type="checkbox" id="checkbox7">
+                        </div>
+                        <div class="checkbox-group">
+                            <label for="checkbox8" class="select-label">Summary XI</label>
+                            <input type="checkbox" id="checkbox8">
+                        </div>
+                    </div>
+                    <div class="checkbox-container">
+                        <div class="checkbox-group">
+                            <label for="checkbox9" class="select-label">Exclusive Amount</label>
+                            <input type="checkbox" id="checkbox9">
+                        </div>
+                        <div class="checkbox-group">
+                            <label for="checkbox10" class="select-label">Summary XI</label>
+                            <input type="checkbox" id="checkbox10">
+                        </div>
+                    </div>
+                    <div class="checkbox-container">
+                        <div class="checkbox-group">
+                            <label for="checkbox11" class="select-label">Bloomberg And RIC</label>
+                            <input type="checkbox" id="checkbox11">
+                        </div>
+                        <div class="checkbox-group">
+                            <label for="checkbox12" class="select-label">Account code</label>
+                            <input type="checkbox" id="checkbox12">
+                        </div>
+
+                    </div>
+                    <div class="checkbox-container">
+                        <div class="checkbox-group">
+                            <label for="checkbox12" class="select-label">Sub Account code</label>
+                            <input type="checkbox" id="checkbox12">
+                        </div>
+                    </div>
+
+                    <div class="button-container">
+                        <button type="button" class="btn btn-primary  px-3 py-1 ">Add</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</section>
